@@ -1,0 +1,653 @@
+/* Färgpalett
+
+#009FE3 OG Blå
+#E8424B Röd
+#FFE000 Gul
+#8C5CA2 Lila
+#00A03B Grön
+#3461AB Blå
+#38B49E Halvgrön
+#EE710C Orange
+#F5B1D0 Rosa
+#A7C714 Militärgrön
+#484848 Svartgrå
+#AD7B4B Brun
+#F8EE76 Beigegul
+
+*/
+
+body,
+footer,
+head {
+  text-align: center;
+}
+
+@media screen and (max-width: 812px) {
+  body {
+    /* Decoration */
+    background: #38B49E;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  body {
+    /* Decoration */
+    background: #A7C714;
+  }
+}
+
+h1 {
+  color: #009FE3;
+  font-family: "GT Maru Mono Trial";
+  font-size: 55pt;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h2 {
+  font-family: "MillionaireTRIAL";
+  font-size: 25pt;
+}
+
+h3 {
+  font-family: "GT Maru Mono Trial";
+}
+
+h4 {
+  font-family: "MillionaireTRIAL";
+}
+
+p {
+  font-family: "GT Maru Mono Trial";
+  margin: 5vh 1vw;
+  font-size: 15pt;
+}
+
+footer {
+  margin: 2%;
+  font-family: "MillionaireTRIAL";
+}
+
+.mark1 {
+  font-family: "GT Maru Mono Trial";
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1em;
+  color: #FFE000;
+  border: solid 1px #000000;
+  border-radius: 4vh;
+  background-color: #8C5CA2;
+  margin: 1em;
+  padding: 1.5em;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+/* * * * * * * * * * * NAVIGATION * * * * * * * * * * * * * */
+
+.grid-nav {
+  /* Decoration */
+
+  font-size: 14pt;
+
+  /* Placement */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.about {
+}
+
+.contact {
+}
+
+.location {
+}
+
+/* * * * * * * * * * * GENERAL DIV ADJUSTMENT * * * * * * * * * * * * * */
+
+.grid-header,
+.grid-menu,
+.grid-category {
+}
+
+.grid-menu {
+}
+
+/* * * * * * * * * * * HEADER * * * * * * * * * * * * * */
+
+.grid-header {
+  /* Placement */
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  /* Decoration */
+
+  border: solid 1px #000000;
+  border-radius: 15vh;
+  background: #EE710C;
+}
+
+.title {
+  font-family: "Pleasure Inktrap Trial Black Inktrap";
+  font-size: 55pt;
+}
+
+.gh1 {
+  /* Placement */
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /* Decoration */
+
+  font-size: 100pt;
+  text-align: center;
+  word-wrap: break-word;
+
+  /* Animation */
+
+  animation: float 6s infinite;
+}
+
+.gh2 {
+  /* Placement */
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-bottom: -10%;
+
+  /* Decoration */
+
+  text-align: center;
+}
+
+/* * * * * * * * * * * WEBBSHOP * * * * * * * * * * * * * */
+
+.grid-shop {
+  /* Placement */
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  /* Decoration */
+
+  border-radius: 15vh;
+  bprder: 1px solid #000000;
+  background: white;
+}
+
+@media screen and (max-width: 812px) {
+  
+   /* Main */
+ 
+  .gs-img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    width: 100%;
+    height: 50%;
+  }
+
+}
+
+@media screen and (min-width: 812px) {
+  .gs-img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    width: 85%;
+    height: 85%;
+  }
+
+}
+
+@media screen and (min-width: 1080px) {
+  .gs-img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.gs-h1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gs-h2 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.r-button {
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  font-size: 45pt;
+}
+
+.l-button {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  font-size: 45pt;
+}
+
+#r-button {
+  background: #F5B1D0;
+  border-radius: 100%;
+  border: solid 1px #000000;
+  margin: 50vh 2vw;
+}
+
+#l-button {
+  background: #F5B1D0;
+  border-radius: 100%;
+  border: solid 1px #000000;
+  margin: 50vh 2vw;
+}
+
+/* * * * * * * * * * * KATEGORIER * * * * * * * * * * * * * */
+
+.grid-category {
+  /* Placement */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+
+  /* Decoration */
+
+  background: #A7C714;
+  border: solid 1px #000000;
+  border-radius: 15vh;
+  text-align: center;
+}
+
+.g1,
+.g2,
+.g3,
+.g4 {
+  /* Decoration */
+
+  border: solid 1px #000000;
+  border-radius: 15vh;
+}
+
+.g1 {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /* Decoration */
+
+  border: solid 1px #000000;
+  background: #F5B1D0;
+  visibility: visible;
+}
+.g2 {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+
+  /* Decoration */
+
+  border: solid 1px #000000;
+  background: #FFE000;
+  visibility: visible;
+}
+
+#g2p {
+  margin-top: -25%;
+  padding-bottom: 75%;
+}
+
+.g3 {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+
+  /* Decoration */
+
+  border: solid 1px #000000;
+  background: #E8424B;
+  visibility: visible;
+}
+
+.g4 {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+
+  /* Decoration */
+  border: solid 1px #000000;
+  background: #AD7B4B;
+  visibility: visible;
+}
+
+.g1info,
+.g2info,
+.g3info,
+.g4info {
+  /* Placement */
+
+  visibility: hidden;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 11;
+
+  /* Decoration */
+
+  border: solid 1px #000000;
+}
+
+/* * * * * * * * * * * MENY * * * * * * * * * * * * * */
+
+.grid-menu {
+  /* Placement */
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+
+  /* Decoration */
+  margin-top: 5%;
+  border-radius: 15%;
+  text-align: center;
+}
+
+.gmh1 {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+
+  /* Decoration */
+}
+
+.gm1p,
+.gm1h,
+.gm2p,
+.gm2h,
+.gm3p,
+.gm3h,
+.gm4p,
+.gm4h,
+.gm5p,
+.gm5h,
+.gm6p,
+.gm6h,
+.gm7p,
+.gm7h,
+.gm8p,
+.gm8h {
+  /* Placement */
+
+  /* Decoration */
+
+  background: #F8EE76;
+  border-radius: 100vh;
+  border: solid 0.1vh #000000;
+}
+
+.gm1p,
+.gm2p,
+.gm3p,
+.gm4p,
+.gm5p,
+.gm6p,
+.gm7p,
+.gm8p {
+  font-family: "GT Maru Trial";
+  font-size: 22pt;
+}
+
+.gm1h,
+.gm2h,
+.gm3h,
+.gm4h,
+.gm5h,
+.gm6h,
+.gm7h,
+.gm8h {
+  font-family: "MillionaireTRIAL";
+  font-size: 22pt;
+}
+
+.gm1p {
+  /* Placement */
+
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.gm1h {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.gm2p {
+  /* Placement */
+
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.gm2h {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.gm3p {
+  /* Placement */
+
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.gm3h {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+.gm4h {
+  /* Placement */
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.gm4p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+.gm5h {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.gm5p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.gm6h {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+
+.gm6p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 7;
+}
+
+.gm7h {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+
+.gm7p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+
+.gm8h {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+
+.gm8p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+
+/* * * * * * * * * * * ANIMATIONER * * * * * * * * * * * * * */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0vh);
+  }
+  50% {
+    transform: translatey(2vh);
+  }
+  100% {
+    transform: translatey(0vh);
+  }
+}
+
+@keyframes scroller
+  
+
+/* * * * * * * * * * * TYPSNITT * * * * * * * * * * * * * */
+
+
+@font-face {
+  font-family: "GT Maru Mono Trial";
+  src: url("https://cdn.glitch.com/faf3ad22-2287-4b30-9c78-d1142bf8ad43%2FGTMaruMonoTrial-Black.woff2?v=1620295145538")
+      format("woff2"),
+    url("https://cdn.glitch.com/faf3ad22-2287-4b30-9c78-d1142bf8ad43%2FGTMaruMonoTrial-Black.woff?v=1620295145538")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MillionaireTRIAL";
+  src: url("https://cdn.glitch.com/faf3ad22-2287-4b30-9c78-d1142bf8ad43%2FMillionaireTRIAL-Italic.woff2?v=1620380223098")
+      format("woff2"),
+    url("https://cdn.glitch.com/faf3ad22-2287-4b30-9c78-d1142bf8ad43%2FMillionaireTRIAL-Italic.woff?v=1620380223099")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pleasure Inktrap Trial Black Inktrap";
+  src: url("https://cdn.glitch.com/faf3ad22-2287-4b30-9c78-d1142bf8ad43%2FPleasureInktrapTrial-BlackInktrapItalic.woff2?v=1620394762551")
+      format("woff2"),
+    url("https://cdn.glitch.com/faf3ad22-2287-4b30-9c78-d1142bf8ad43%2FPleasureInktrapTrial-BlackInktrapItalic.woff?v=1620394762702")
+      format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
